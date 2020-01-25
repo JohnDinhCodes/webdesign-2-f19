@@ -60,6 +60,7 @@ export default class NavBar extends Component {
             menuState={this.state.menu}
           />
           <SideMenu menuState={this.state.menu} links={links} />
+          <Backdrop menuState={this.state.menu} />
         </Breakpoint>
       </header>
     );

@@ -1,5 +1,8 @@
 import React from 'react';
 
-export const BackDrop = () => {
-  return <div className='backdrop'></div>;
+// Stylesheet
+import './backdrop.styles.css';
+
+export const Backdrop = ({ menuState }) => {
+  return <div className={`backdrop${menuState ? ' active' : ''}`}></div>;
 };
