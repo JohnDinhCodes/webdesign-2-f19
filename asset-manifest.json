@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/webdesign-2-f19/static/css/main.18c1c735.chunk.css",
+    "main.js": "/webdesign-2-f19/static/js/main.4b236829.chunk.js",
+    "main.js.map": "/webdesign-2-f19/static/js/main.4b236829.chunk.js.map",
+    "runtime-main.js": "/webdesign-2-f19/static/js/runtime-main.6925809e.js",
+    "runtime-main.js.map": "/webdesign-2-f19/static/js/runtime-main.6925809e.js.map",
+    "static/css/2.764ccc25.chunk.css": "/webdesign-2-f19/static/css/2.764ccc25.chunk.css",
+    "static/js/2.48c1dd97.chunk.js": "/webdesign-2-f19/static/js/2.48c1dd97.chunk.js",
+    "static/js/2.48c1dd97.chunk.js.map": "/webdesign-2-f19/static/js/2.48c1dd97.chunk.js.map",
+    "index.html": "/webdesign-2-f19/index.html",
+    "precache-manifest.1725c1234f7cce8592b1364fa84c10a0.js": "/webdesign-2-f19/precache-manifest.1725c1234f7cce8592b1364fa84c10a0.js",
+    "service-worker.js": "/webdesign-2-f19/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/webdesign-2-f19/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.18c1c735.chunk.css.map": "/webdesign-2-f19/static/css/main.18c1c735.chunk.css.map",
+    "static/js/2.48c1dd97.chunk.js.LICENSE": "/webdesign-2-f19/static/js/2.48c1dd97.chunk.js.LICENSE",
+    "static/media/logo.svg": "/webdesign-2-f19/static/media/logo.968a0893.svg",
+    "static/media/logotype.svg": "/webdesign-2-f19/static/media/logotype.8204a4b2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6925809e.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.48c1dd97.chunk.js",
+    "static/css/main.18c1c735.chunk.css",
+    "static/js/main.4b236829.chunk.js"
+  ]
+}
