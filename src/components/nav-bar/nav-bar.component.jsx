@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Packages
 import { Breakpoint } from 'react-socks';
@@ -29,13 +29,18 @@ const links = [
   { text: 'Subscribe', target: 'subscribe' },
 ];
 
-export const NavBar = () => {
-  return (
-    <nav className='nav-bar'>
-      <LogoLink />
-      <Breakpoint xl only>
-        <NavLinks links={links} />
-      </Breakpoint>
-    </nav>
-  );
-};
+export default class NavBar extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <nav className='nav-bar'>
+        <LogoLink />
+        <Breakpoint xl only>
+          <NavLinks links={links} />
+        </Breakpoint>
+      </nav>
+    );
+  }
+}

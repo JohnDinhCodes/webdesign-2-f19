@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import { BreakpointProvider, setDefaultBreakpoints } from 'react-socks';
 
-import { NavBar } from './components/nav-bar/nav-bar.component';
+// Class Components
+import NavBar from './components/nav-bar/nav-bar.component';
 
 setDefaultBreakpoints([
   { xs: 0 },
