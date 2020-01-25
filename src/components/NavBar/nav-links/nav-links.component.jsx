@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import './nav-links.styles.css';
+// Packages
+import { Link } from "react-scroll";
 
-import { Link } from 'react-scroll';
+// Stylesheet
+import "./nav-links.styles.css";
 
-export const NavLinks = props => {
-  return (
-    <ul className='nav-links'>
-      {props.links.map(link => (
-        <li key={link.target}>
-          <Link to={link.target}>{link.text}</Link>
-        </li>
-      ))}
-    </ul>
-  );
+export const NavLinks = (props) => {
+	return (
+		<ul className='nav-links'>
+			{props.links.map((link) => (
+				<li key={link.target}>
+					<Link to={link.target}>{link.text}</Link>
+				</li>
+			))}
+		</ul>
+	);
 };
