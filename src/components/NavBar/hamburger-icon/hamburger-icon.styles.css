@@ -28,9 +28,9 @@
   transform-origin: 1px;
 }
 
-.hamburger.active div {
+/* .hamburger.active div {
   background-color: #000;
-}
+} */
 
 .hamburger.active div:first-child {
   transform: rotate(45deg);

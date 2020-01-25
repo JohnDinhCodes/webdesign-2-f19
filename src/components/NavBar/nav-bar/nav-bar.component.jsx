@@ -11,6 +11,7 @@ import { LogoLink } from '../logo-link/logo-link.component';
 import { NavLinks } from '../nav-links/nav-links.component';
 import { HamburgerIcon } from '../hamburger-icon/hamburger-icon.component';
 import { SideMenu } from '../side-menu/side-menu.component';
+import { Backdrop } from '../../backdrop/backdrop.component';
 
 /**
  * Text will be rendered by the DOM.
