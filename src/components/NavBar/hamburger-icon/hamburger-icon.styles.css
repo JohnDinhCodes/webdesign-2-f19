@@ -1,0 +1,44 @@
+.hamburger {
+  position: absolute;
+  left: 2rem;
+  top: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger div {
+  background-color: #fff;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.hamburger.active div {
+  background-color: #000;
+}
+
+.hamburger.active div:first-child {
+  transform: rotate(45deg);
+}
+.hamburger.active div:nth-child(2) {
+  transform: translateX(20px);
+  opacity: 0;
+}
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg);
+}
