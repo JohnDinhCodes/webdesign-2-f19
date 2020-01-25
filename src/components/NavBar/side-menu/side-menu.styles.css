@@ -1,0 +1,35 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+  transform: translateX(-100%);
+}
+
+.side-menu.active {
+  transform: translateX(0);
+}
+
+.side-menu .nav-links li {
+  display: block;
+  padding: 2em;
+}
+
+.side-menu .nav-links li a {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .side-menu {
+    width: 100%;
+  }
+}

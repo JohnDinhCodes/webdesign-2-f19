@@ -6,9 +6,11 @@ import { Breakpoint } from 'react-socks';
 // Stylesheet
 import './nav-bar.styles.css';
 
-// Components
+// Functional Components
 import { LogoLink } from '../logo-link/logo-link.component';
 import { NavLinks } from '../nav-links/nav-links.component';
+import { HamburgerIcon } from '../hamburger-icon/hamburger-icon.component';
+import { SideMenu } from '../side-menu/side-menu.component';
 
 /**
  * Text will be rendered by the DOM.
@@ -28,19 +30,37 @@ const links = [
   { text: 'Legacy', target: 'legacy' },
   { text: 'Subscribe', target: 'subscribe' },
 ];
-
 export default class NavBar extends Component {
   constructor() {
     super();
+    this.state = {
+      menu: false,
+    };
   }
+
+  hamburgerHandler = e => {
+    this.setState(prevState => {
+      return { menu: !prevState.menu };
+    });
+  };
+
   render() {
     return (
-      <nav className='nav-bar'>
-        <LogoLink />
-        <Breakpoint xl only>
-          <NavLinks links={links} />
+      <header>
+        <nav className='nav-bar'>
+          <LogoLink />
+          <Breakpoint l only>
+            <NavLinks links={links} />
+          </Breakpoint>
+        </nav>
+        <Breakpoint m down>
+          <HamburgerIcon
+            handler={this.hamburgerHandler}
+            menuState={this.state.menu}
+          />
+          <SideMenu menuState={this.state.menu} links={links} />
         </Breakpoint>
-      </nav>
+      </header>
     );
   }
 }

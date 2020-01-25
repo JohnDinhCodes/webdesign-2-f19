@@ -1,0 +1,24 @@
+.logo-link {
+  cursor: pointer;
+  transition: all 300ms ease 0s;
+  transform: translateY(3px);
+}
+
+.logo-link:hover {
+  transform: scale(1.1);
+}
+
+.logo-link img {
+  vertical-align: middle;
+}
+
+.logo-icon {
+  height: 30px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  height: 40px;
+  filter: invert(100%);
+}

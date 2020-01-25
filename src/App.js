@@ -3,20 +3,15 @@ import './App.css';
 import { BreakpointProvider, setDefaultBreakpoints } from 'react-socks';
 
 // Class Components
-import NavBar from './components/nav-bar/nav-bar.component';
+import NavBar from './components/NavBar/nav-bar/nav-bar.component';
 
-setDefaultBreakpoints([
-  { xs: 0 },
-  { s: 376 },
-  { m: 426 },
-  { l: 769 },
-  { xl: 1069 },
-]);
+// Functional Components
+import { SideMenu } from './components/NavBar/side-menu/side-menu.component';
+
+setDefaultBreakpoints([{ xs: 0 }, { s: 376 }, { m: 426 }, { l: 1069 }]);
 
 export const App = () => (
   <BreakpointProvider>
-    <header>
-      <NavBar />
-    </header>
+    <NavBar />
   </BreakpointProvider>
 );
